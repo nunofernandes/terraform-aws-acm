@@ -51,3 +51,9 @@ variable "tags" {
   type        = map(string)
   default     = {}
 }
+
+variable "certificate_transparency_logging_preference" {
+  description = "Specifies whether certificate details should be added to a certificate transparency log. Valid values are ENABLED or DISABLED"
+  type        = string
+  default     = "ENABLED"
+}
